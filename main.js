@@ -8,7 +8,7 @@ $(document).ready(function(){
 
     var value = $("#userInput").val();
     $.ajax({
-           url: 'http://en.wikipedia.org/w/api.php',
+           url: 'https://en.wikipedia.org/w/api.php',
            data: { action: 'query', list: 'search', srsearch: value, format: 'json' },
            dataType: 'jsonp',
            success: function (apiResult) {
